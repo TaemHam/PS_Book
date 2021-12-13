@@ -23,7 +23,8 @@ def bin_srch(targ, s, e):
 
 ans = []
 for i in m_l:
-    print(bin_srch(i, 0, n-1))
+    ans.append(bin_srch(i, 0, n-1))
+print(*ans)
 
 
 
