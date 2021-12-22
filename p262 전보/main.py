@@ -38,7 +38,7 @@ def main(f=None):
     while q:
         cost, node = heappop(q)
 
-        if dist[node] > cost:
+        if dist[node] < cost:
             continue
 
         for i in d[node]:

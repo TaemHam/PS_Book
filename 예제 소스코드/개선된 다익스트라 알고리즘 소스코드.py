@@ -1,14 +1,14 @@
 from heapq import heappush, heappop
 n, m = 6, 11
 stt = 1
-grp = {1 : [(2, 2), (5, 3), (1, 4)], 2 : [(3, 3), (2, 4)], 3 : [(3, 2), (5, 6)], 4 : [(3, 3), (1, 5)], 5 : [(1, 3), (2, 6)], 6 : []}
+grp = [[],[(2, 2), (5, 3), (1, 4)],[(3, 3), (2, 4)], [(3, 2), (5, 6)], [(3, 3), (1, 5)], [(1, 3), (2, 6)], []]
 
 INF = int(1e9)
 dist = [INF for _ in range(n+1)]
 route = ['' for _ in range(n+1)]
 q = [(0, stt)]
 dist[stt] = 0
-route [stt] = '1'
+route[stt] = '1'
 
 while q:
     cost_accum, node = heappop(q)
